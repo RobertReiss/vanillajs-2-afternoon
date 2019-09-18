@@ -8,7 +8,7 @@ The goal of this project is to build a functional piano that can be played using
 
 ### Summary
 
-Begin by examining the exisiting code. You'll notice that our piano is a Scalable Vector Graphic (SVG); you can find more information on SVG's <a href="https://www.w3schools.com/graphics/svg_intro.asp">here</a>.
+Begin by examining the existing code. You'll notice that our piano is a Scalable Vector Graphic (SVG); you can find more information on SVG's <a href="https://www.w3schools.com/graphics/svg_intro.asp">here</a>.
 
 ### Instructions
 
@@ -77,7 +77,7 @@ In this step we'll get access to the visual key that was pressed (the unique pol
   - One that references the `tone` or the audio tag that we want to play.
   - One that references the `pianoKey` or the polygon that should be active when the key is pressed.
   - You can access the `tone` and `pianoKey` using a selector and our `keyCode` as mentioned above.
-- Add a conditon to check if our tone is `falsy`.
+- Add a condition to check if our tone is `falsy`.
   - If it is, `return`.
   - This will trim down on the amount of work our application needs to do when an invalid key is pressed.
 
@@ -143,7 +143,7 @@ In this step we'll add an animation to make our keys work when their associated 
   - If you try it now, you'll notice that each time a key on the keyboard is pressed, its associated pianoKey is changed; however, it never changes back when the key is no longer active!
   - After our tone plays, remove the class `pressed` from our `pianoKey` element.
   - You'll now notice that it appears that our key never receives the class.
-    - This occurs because the class is being added an removed almost instantly.
+    - This occurs because the class is being added and removed almost instantly.
     - To slow this down, wrap the class removal in a setTimeout, to be removed after 300ms.
   - You should now have keys that appear `pressed` when a note is played.
 - You should also have a fully functional piano that plays notes and gives the appearance of pressed keys. Feel free to remap the keys using the `data-key` attribute and the associated `keyCode` from each key on the keyboard.
